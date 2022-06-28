@@ -1,16 +1,12 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-import plotly.graph_objects as go
-import plotly.express as px
 import numpy as np
 from pandas import DataFrame, read_csv
 import pandas as pd
 import openpyxl
 from openpyxl import load_workbook
-from insert_df_excel import *  # il y a la fonction qui permet de coller une df dans un excel
 import pandas as pd
-
 
 st.title('Excel to protuner')
 
