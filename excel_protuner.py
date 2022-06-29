@@ -22,8 +22,8 @@ def modify_table_for_protuner_input(name_excel):
     # df.head()
 
     df = df.drop_duplicates(subset='loop_number', keep="first")  # remove duplicate
-    list_loop_number = df.loop_number.unique().tolist()  # list of loop_number
     df = df.sort_values(['loop_number'], ascending=True)  # sort the dataframe by loop_number
+    list_loop_number = df.loop_number.unique().tolist()  # list of loop_number
 
     tagname, OPCname, Raw_Min, Raw_Max, EU_MIN, EU_MAX = [], [], [], [], [], []  # init list
 
